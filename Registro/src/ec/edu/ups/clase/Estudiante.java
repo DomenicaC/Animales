@@ -12,53 +12,37 @@ import java.util.List;
  *
  * @author Domenica Cañizares
  */
-public class Estudiante {
+public class Estudiante extends Persona{
     private Carrera carrera;
-    private Persona persona;
-    private List<Persona> personas;
     
-    public Estudiante(){
-         personas=new ArrayList<>();
-     }
-
     //set
     public void setCarrera(Carrera carrera) {
         this.carrera = carrera;
     }
-
-    public void setPersona(Persona persona) {
-        this.persona = persona;
-    }
-
-    public void setPersonas(List<Persona> personas) {
-        this.personas = personas;
-    }
     
-
     //get
     public Carrera getCarrera() {
         return carrera;
     }
 
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public List<Persona> getPersonas() {
-        return personas;
-    }
-    
-    
-    public void agregarPersona(Persona persona){
-        personas.add(persona);
-    }
-    
     //to String
 
     @Override
     public String toString() {
-        return "Estudiante{" + "carrera=" + carrera + ", persona=" + persona + ", personas=" + personas + '}';
+        return "Estudiante{" + "carrera=" + carrera + '}';
     }
-    
+
+    public Estudiante(int codigo) {
+        super(codigo);
+    }
+
+    public Estudiante(int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+    }
+
+    public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.setCarrera(carrera);
+    }
     
 }
