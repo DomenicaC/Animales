@@ -18,6 +18,8 @@ public class Materia {
     private Grupo grupos;
     private Profesor profesores;
 
+   
+
     //set
     public void setCodigoM(int codigoM) {
         this.codigoM = codigoM;
@@ -81,6 +83,18 @@ public class Materia {
     public String toString() {
         return "Materia{" + "codigoM=" + codigoM + ", nombreM=" + nombreM + ", numCreditos=" + numCreditos + ", numHoras=" + numHoras + ", nivelM=" + nivelM + ", grupos=" + grupos + ", profesores=" + profesores + '}';
     }
+
+    //constructor
+    public Materia(int codigoM, String nombreM, int numCreditos, int numHoras, int nivelM) {
+        this.codigoM = codigoM;
+        this.nombreM = nombreM;
+        this.numCreditos = numCreditos;
+        this.numHoras = numHoras;
+        this.nivelM = nivelM;
+    }
+
+    
+    
     
     
 }

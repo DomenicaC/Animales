@@ -9,7 +9,8 @@ package ec.edu.ups.clase;
  *
  * @author Domenica Cañizares
  */
-public class HistorialCalificacion {
+//estudainte
+public class HistorialCalificacion{
     private Materia materia;
     private Estudiante est;
     private int aprovechamiento1;

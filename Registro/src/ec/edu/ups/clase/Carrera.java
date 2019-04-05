@@ -84,6 +84,15 @@ public class Carrera {
     public String toString() {
         return "Carrera{" + "codigoC=" + codigoC + ", nombreC=" + nombreC + ", materias=" + materias + ", numSemestre=" + numSemestre + ", numEst=" + numEst + ", Titulo=" + Titulo + '}';
     }
+
+    public Carrera(int codigoC, String nombreC, int numSemestre, int numEst, String Titulo) {
+        this.codigoC = codigoC;
+        this.nombreC = nombreC;
+        this.numSemestre = numSemestre;
+        this.numEst = numEst;
+        this.Titulo = Titulo;
+    }
+    
     
     
 }

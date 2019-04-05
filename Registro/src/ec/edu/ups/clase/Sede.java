@@ -77,6 +77,13 @@ public class Sede {
     public String toString() {
         return "Sede{" + "Codigo Sede= " + codigoS + ", Nombre Sede= " + nomS + ", Direccion Sede=" + direcS + ", Telfono Sede= " + telfS + ", carreras=" + carreras + '}';
     }
+
+    public Sede(int codigoS, String nomS, String direcS, String telfS) {
+        this.codigoS = codigoS;
+        this.nomS = nomS;
+        this.direcS = direcS;
+        this.telfS = telfS;
+    }
     
     
 }
