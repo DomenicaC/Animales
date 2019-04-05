@@ -14,7 +14,7 @@ public class Persona {
     private String nombre;
     private String cedula;
     private String telefono;
-    private String dereccion;
+    private String direccion;
     private String correo;
     private Sede sede;
 
@@ -35,8 +35,8 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public void setDereccion(String dereccion) {
-        this.dereccion = dereccion;
+    public void setDireccion(String dereccion) {
+        this.direccion = dereccion;
     }
 
     public void setCorreo(String correo) {
@@ -64,8 +64,8 @@ public class Persona {
         return telefono;
     }
 
-    public String getDereccion() {
-        return dereccion;
+    public String getDireccion() {
+        return direccion;
     }
 
     public String getCorreo() {
