@@ -12,15 +12,10 @@ import java.util.List;
  *
  * @author Domenica Cañizares
  */
-public class Profesor {
+public class Profesor extends Persona{
     private String titulo;
     private double salario;
     private String cargo;
-    private List<Persona> personasP;
-    
-    public Profesor(){
-         personasP=new ArrayList<>();
-     }
 
     //set
     public void setTitulo(String titulo) {
@@ -48,9 +43,13 @@ public class Profesor {
         return cargo;
     }
     
-    public void agregarPersona(Persona personaP){
-        personasP.add(personaP);
-    }
+    //constructot
     
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
     
 }
