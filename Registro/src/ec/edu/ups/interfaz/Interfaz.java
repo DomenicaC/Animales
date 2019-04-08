@@ -55,7 +55,6 @@ public class Interfaz {
         //grupo
         Grupo gru = new Grupo(1, "Grupo 8", 1);
         Grupo gru1 = new Grupo(2, "Grupo 11", 5);
-        Grupo gru2 = new Grupo(3, "Grupo 1", 3);
         
         //historial
         HistorialCalificacion hist = new HistorialCalificacion(1, 10, 2, 7);
@@ -63,8 +62,7 @@ public class Interfaz {
         HistorialCalificacion hist2 = new HistorialCalificacion(1, 4, 2, 5);
         
         
-        //carreraAgregar        //carreraAgregar
-
+        //carreraAgregar   
         car.agregarMateria(mate);
         car.agregarMateria(etica);
         System.out.println("Carrera de Computacion");
@@ -82,15 +80,29 @@ public class Interfaz {
         
         //sedeAgredar
         sedeCuenca.agregarCarrera(car);
-        sedeCuenca.agregarCarrera(car1);
+        System.out.println("Primera carrera de la Sede Cuenca");
+        System.out.println(sedeCuenca);
+        
+        sedeCuenca.agregarCarrera(car);
+        System.out.println("Segunda carrera de la Sede Cuenca");
+        System.out.println(sedeCuenca);
+        
         sedeCuenca.agregarCarrera(car2);
-        System.out.println("Carreras de la Sede Cuenca");
+        System.out.println("Tercera carrera de la Sede Cuenca");
         System.out.println(sedeCuenca);
         
         //agregarHistorial
         hist.agregarEstudiante(est);
+        System.out.println("Estudiante 1");
+        System.out.println(hist);
+        
         hist1.agregarEstudiante(est1);
+        System.out.println("Estudiante 2");
+        System.out.println(hist1);
+        
         hist2.agregarEstudiante(est2);
+        System.out.println("Estudiante 3");
+        System.out.println(hist2);
         
         //agregar
         //sedeCuenca.agregarCarrera(car);
