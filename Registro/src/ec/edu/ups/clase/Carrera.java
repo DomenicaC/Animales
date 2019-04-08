@@ -20,9 +20,14 @@ public class Carrera {
     private int numEst;
     private String Titulo;
 
-    public Carrera(){
-         materias=new ArrayList<>();
-     }
+    public Carrera(int codigoC, String nombreC, int numSemestre, int numEst, String Titulo) {
+        this.codigoC = codigoC;
+        this.nombreC = nombreC;
+        this.numSemestre = numSemestre;
+        this.numEst = numEst;
+        this.Titulo = Titulo;
+        materias=new ArrayList<>();
+    }
     
     //set
     public void setCodigoC(int codigoC) {
@@ -85,13 +90,7 @@ public class Carrera {
         return "Carrera{" + "codigoC=" + codigoC + ", nombreC=" + nombreC + ", materias=" + materias + ", numSemestre=" + numSemestre + ", numEst=" + numEst + ", Titulo=" + Titulo + '}';
     }
 
-    public Carrera(int codigoC, String nombreC, int numSemestre, int numEst, String Titulo) {
-        this.codigoC = codigoC;
-        this.nombreC = nombreC;
-        this.numSemestre = numSemestre;
-        this.numEst = numEst;
-        this.Titulo = Titulo;
-    }
+    
     
     
     

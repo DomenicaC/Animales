@@ -5,9 +5,6 @@
  */
 package ec.edu.ups.clase;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author Domenica Cañizares

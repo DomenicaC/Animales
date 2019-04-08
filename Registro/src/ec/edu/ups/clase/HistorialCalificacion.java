@@ -15,16 +15,19 @@ import java.util.List;
 //estudainte
 public class HistorialCalificacion{
     private Materia materia;
-    private List<Estudiante> est;
+    //private List<Estudiante> est;
     private int aprovechamiento1;
     private int examen1;
     private int aprovechamiento2;
     private int examen2;
 
+    public HistorialCalificacion(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
+        this.aprovechamiento1 = aprovechamiento1;
+        this.examen1 = examen1;
+        this.aprovechamiento2 = aprovechamiento2;
+        this.examen2 = examen2;
+    }
     
-    public HistorialCalificacion(){
-         est=new ArrayList<>();
-     }
     //set
     public void setMateria(Materia materia) {
         this.materia = materia;
@@ -70,23 +73,16 @@ public class HistorialCalificacion{
         return examen2;
     }
     
-    public void agregarEstudiante(Estudiante estu){
-       est.add(estu);
-    }
+    
     
     //to String
 
     @Override
     public String toString() {
-        return "HistorialCalificacion{" + "materia=" + materia + ", est=" + est + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
+        return "HistorialCalificacion{" + "materia=" + materia +  "aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
     }
 
-    public HistorialCalificacion(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
-        this.aprovechamiento1 = aprovechamiento1;
-        this.examen1 = examen1;
-        this.aprovechamiento2 = aprovechamiento2;
-        this.examen2 = examen2;
-    }
+    
     
     
     
