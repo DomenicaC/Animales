@@ -5,6 +5,9 @@
  */
 package ec.edu.ups.clase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Domenica Cañizares
@@ -12,21 +15,22 @@ package ec.edu.ups.clase;
 //estudainte
 public class HistorialCalificacion{
     private Materia materia;
-    private Estudiante est;
+    private List<Estudiante> est;
     private int aprovechamiento1;
     private int examen1;
     private int aprovechamiento2;
     private int examen2;
 
+    
+    public HistorialCalificacion(){
+         est=new ArrayList<>();
+     }
     //set
     public void setMateria(Materia materia) {
         this.materia = materia;
     }
 
-    public void setEst(Estudiante est) {
-        this.est = est;
-    }
-
+    
     public void setAprovechamiento1(int aprovechamiento1) {
         this.aprovechamiento1 = aprovechamiento1;
     }
@@ -48,9 +52,7 @@ public class HistorialCalificacion{
         return materia;
     }
 
-    public Estudiante getEst() {
-        return est;
-    }
+    
 
     public int getAprovechamiento1() {
         return aprovechamiento1;
@@ -68,12 +70,25 @@ public class HistorialCalificacion{
         return examen2;
     }
     
+    public void agregarEstudiante(Estudiante estu){
+       est.add(estu);
+    }
+    
     //to String
 
     @Override
     public String toString() {
         return "HistorialCalificacion{" + "materia=" + materia + ", est=" + est + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
     }
+
+    public HistorialCalificacion(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
+        this.aprovechamiento1 = aprovechamiento1;
+        this.examen1 = examen1;
+        this.aprovechamiento2 = aprovechamiento2;
+        this.examen2 = examen2;
+    }
+    
+    
     
     
 }

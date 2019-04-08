@@ -46,6 +46,12 @@ public class Grupo {
     public String toString() {
         return "Grupo{" + "Codigo Grupo= " + codigoG + ", Nombre Grupo= " + nomG + ", Cupo= " + cupo + '}';
     }
+
+    public Grupo(int codigoG, String nomG, int cupo) {
+        this.codigoG = codigoG;
+        this.nomG = nomG;
+        this.cupo = cupo;
+    }
     
     
 }
