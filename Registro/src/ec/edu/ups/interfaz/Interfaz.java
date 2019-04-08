@@ -12,6 +12,7 @@ import ec.edu.ups.clase.HistorialCalificacion;
 import ec.edu.ups.clase.Materia;
 import ec.edu.ups.clase.Profesor;
 import ec.edu.ups.clase.Sede;
+import java.util.List;
 
 /**
  *
@@ -109,7 +110,6 @@ public class Interfaz {
         est1.agregarCali(hist1);
         est2.agregarCali(hist2);
         
-        
         //imprimir
         System.out.println(sedeCuenca);
         System.out.println(est);
@@ -117,6 +117,66 @@ public class Interfaz {
         System.out.println(est2);
         
         
+        
+        Estudiante estudiante = new Estudiante();
+        estudiante.setCodigo(154);
+        estudiante.setNombre("Pedro");
+        estudiante.setCedula("0145698723");
+        estudiante.setTelefono("3012113");
+        estudiante.setDireccion("Miraflores");
+        estudiante.setCorreo("pedro@est.ups.edu.ec");
+        
+        //Grupo
+        Grupo gru1 = new Grupo();
+        gru1.setCodigoG(1);
+        gru1.setNomG("Grupo 1");
+        gru1.setCupo(6);
+        
+        //Materia
+        Materia mate1 = new Materia();
+        mate1.setCodigoM(2);
+        mate1.setGrupos(gru1);
+        mate1.setNivelM(4);
+        mate1.setNombreM("Matematicas Avanzadas");
+        mate1.setNumCreditos(4);
+        mate1.setNumHoras(260);
+        
+        //Carrera
+        Carrera compu = new Carrera();
+        compu.setCodigoC(3);
+        compu.setNombreC("Ingenieria en Computación");
+        compu.agregarMateria(mate1);
+        compu.setNumEst(100);
+        compu.setNumSemestre(10);
+        compu.setTitulo("Ingeniero en ciencias de la computación");
+        
+        //Sede
+        Sede cue = new Sede();
+        cue.setCarreras((List<Carrera>) compu);
+        cue.setCodigoS(4);
+        cue.setDirecS("Calle Vieja");
+        cue.setNomS("El vecino");
+        cue.setTelfS("74632879");
+        
+        //Profesor
+        Profesor profesor = new Profesor();
+        profesor.setCargo("Profesor");
+        profesor.setCedula("0136524931");
+        profesor.setCodigo(5);
+        profesor.setCorreo("julio@ups.edu.ec");
+        profesor.setDireccion("El Batan");
+        profesor.setNombre("Julio");
+        profesor.setSalario(500);
+        profesor.setSede(cue);
+        
+        System.out.println(profesor);
+        
+        //HistorialCalificaciones
+        HistorialCalificacion historial = new HistorialCalificacion();
+        historial.setAprovechamiento1(20);
+        historial.setExamen1(15);
+        historial.setMateria(mate1);
+        historial.agregarEstudiante(estudiante);
         
         //agregar
         //sedeCuenca.agregarCarrera(car);
