@@ -23,7 +23,7 @@ public class Interfaz {
         Estudiante est = new Estudiante(1, "Pepito", "0123465789", "0965478235", "Luis Cordero", "pepito@upsedu.ec");
         Estudiante est1 = new Estudiante(2, "Juanito", "0129876543", "0986479215", "Remigio Crespo", "juanito@upsedu.ec");
         Estudiante est2 = new Estudiante(3, "Marta", "0265478935", "0975698231", "Max. uhle", "pepito@upsedu.ec");
-        
+        //Estudiante est3 = new Estudiante(4, "Cecilia", "032564789", "0345216983", "Pio Bravo", "cecilia@est.ups.edu.ec");
         
         //carrera
         Carrera car = new Carrera(1, "Computacion", 1, 12, "Ingeniero");
@@ -65,44 +65,58 @@ public class Interfaz {
         //carreraAgregar   
         car.agregarMateria(mate);
         car.agregarMateria(etica);
-        System.out.println("Carrera de Computacion");
-        System.out.println(car);
+        //System.out.println("Carrera de Computacion");
+        //System.out.println(car);
         
         car1.agregarMateria(algebra);
         car1.agregarMateria(progra);
-        System.out.println("Carrera de Telematica");
-        System.out.println(car1);
+        //System.out.println("Carrera de Telematica");
+        //System.out.println(car1);
         
         car2.agregarMateria(esc);
         car2.agregarMateria(logica);
-        System.out.println("Carrera de Mecatronica");
-        System.out.println(car2);
+        //System.out.println("Carrera de Mecatronica");
+        //System.out.println(car2);
         
         //sedeAgredar
         sedeCuenca.agregarCarrera(car);
-        System.out.println("Primera carrera de la Sede Cuenca");
-        System.out.println(sedeCuenca);
+        //System.out.println("Primera carrera de la Sede Cuenca");
+        //System.out.println(sedeCuenca);
         
         sedeCuenca.agregarCarrera(car);
-        System.out.println("Segunda carrera de la Sede Cuenca");
-        System.out.println(sedeCuenca);
+        //System.out.println("Segunda carrera de la Sede Cuenca");
+        //System.out.println(sedeCuenca);
         
         sedeCuenca.agregarCarrera(car2);
-        System.out.println("Tercera carrera de la Sede Cuenca");
-        System.out.println(sedeCuenca);
+        //System.out.println("Tercera carrera de la Sede Cuenca");
+        //System.out.println(sedeCuenca);
         
         //agregarHistorial
         hist.agregarEstudiante(est);
-        System.out.println("Estudiante 1");
-        System.out.println(hist);
+        //System.out.println("Estudiante 1");
+        //System.out.println(hist);
         
         hist1.agregarEstudiante(est1);
-        System.out.println("Estudiante 2");
-        System.out.println(hist1);
+        //System.out.println("Estudiante 2");
+        //System.out.println(hist1);
         
         hist2.agregarEstudiante(est2);
-        System.out.println("Estudiante 3");
-        System.out.println(hist2);
+        //System.out.println("Estudiante 3");
+        //System.out.println(hist2);
+        
+        //agregar
+        est.agregarCali(hist);
+        est1.agregarCali(hist1);
+        est2.agregarCali(hist2);
+        
+        
+        //imprimir
+        System.out.println(sedeCuenca);
+        System.out.println(est);
+        System.out.println(est1);
+        System.out.println(est2);
+        
+        
         
         //agregar
         //sedeCuenca.agregarCarrera(car);

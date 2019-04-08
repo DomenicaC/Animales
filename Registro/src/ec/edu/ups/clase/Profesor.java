@@ -16,6 +16,7 @@ public class Profesor extends Persona{
     private String titulo;
     private double salario;
     private String cargo;
+    
 
     //set
     public void setTitulo(String titulo) {

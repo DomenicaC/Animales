@@ -14,6 +14,12 @@ import java.util.List;
  */
 public class Estudiante extends Persona{
     private Carrera carrera;
+    private List<HistorialCalificacion>calificaciones;
+   
+    //public Estudiante(){
+     //    calificaciones=new ArrayList<>();
+     //}
+    
     
     //set
     public void setCarrera(Carrera carrera) {
@@ -25,6 +31,8 @@ public class Estudiante extends Persona{
         return carrera;
     }
 
+   
+    
     //to String
 
     @Override
@@ -43,6 +51,12 @@ public class Estudiante extends Persona{
     public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
         super(codigo, nombre, cedula, telefono, direccion, correo);
         this.setCarrera(carrera);
+        calificaciones=new ArrayList<>();
+        
+    }
+    
+     public void agregarCali(HistorialCalificacion calificacion){
+       calificaciones.add(calificacion);
     }
     
 }
